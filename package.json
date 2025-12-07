@@ -1,0 +1,79 @@
+{
+    "name": "react-native-bottom-swipeable-tabs",
+    "version": "1.0.0",
+    "description": "High-performance, type-safe swipeable bottom tabs for React Native with smooth animations for your next project",
+    "main": "lib/commonjs/index.js",
+    "module": "lib/module/index.js",
+    "types": "lib/typescript/index.d.ts",
+    "react-native": "src/index.tsx",
+    "source": "src/index.tsx",
+    "files": [
+      "src",
+      "lib",
+      "!**/__tests__",
+      "!**/__fixtures__",
+      "!**/__mocks__"
+    ],
+    "scripts": {
+      "typescript": "tsc --noEmit",
+      "lint": "eslint \"**/*.{js,ts,tsx}\"",
+      "prepare": "bob build",
+      "release": "release-it"
+    },
+    "keywords": [
+      "react-native",
+      "ios",
+      "android",
+      "tabs",
+      "bottom-tabs",
+      "swipeable",
+      "animated",
+      "gestures",
+      "instagram"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/AnshulKahar2729/react-native-bottom-swipeable-tabs.git"
+    },
+    "author": "Anshul Kahar <anshulkahar2211@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/AnshulKahar2729/react-native-bottom-swipeable-tabs/issues"
+    },
+    "homepage": "https://github.com/AnshulKahar2729/react-native-bottom-swipeable-tabs#readme",
+    "publishConfig": {
+      "registry": "https://registry.npmjs.org/"
+    },
+    "devDependencies": {
+      "@react-native-community/eslint-config": "^3.2.0",
+      "@types/react": "^18.2.0",
+      "@types/react-native": "^0.72.0",
+      "eslint": "^8.51.0",
+      "prettier": "^3.0.3",
+      "react": "18.2.0",
+      "react-native": "0.72.6",
+      "react-native-builder-bob": "^0.23.0",
+      "release-it": "^16.2.1",
+      "typescript": "^5.2.2"
+    },
+    "peerDependencies": {
+      "react": "*",
+      "react-native": "*",
+      "react-native-gesture-handler": ">=2.0.0",
+      "react-native-reanimated": ">=3.0.0"
+    },
+    "react-native-builder-bob": {
+      "source": "src",
+      "output": "lib",
+      "targets": [
+        "commonjs",
+        "module",
+        [
+          "typescript",
+          {
+            "project": "tsconfig.build.json"
+          }
+        ]
+      ]
+    }
+  }
